@@ -21,4 +21,9 @@ public class Marca {
         return nombre;
     }
 
+    @Override
+    public String toString() {
+        return this.nombre;
+    }
+
 }

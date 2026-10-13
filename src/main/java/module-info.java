@@ -6,4 +6,6 @@ module org.example.proyectocrud {
 
     opens org.example.proyectocrud to javafx.fxml;
     exports org.example.proyectocrud;
+
+    opens org.example.proyectocrud.controller to javafx.fxml;
 }

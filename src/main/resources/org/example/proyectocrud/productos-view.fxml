@@ -41,7 +41,7 @@
             <TextField fx:id="txtNombre" promptText="Nombre del producto" GridPane.columnIndex="3" />
             <TextField fx:id="txtStock" promptText="0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <TextField fx:id="txtDescripcion" promptText="Descripción opcional" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-            <ComboBox fx:id="cmbDescripcion" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cmbCategoria" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <ComboBox fx:id="cmbMarca" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
             <DatePicker fx:id="dtpFechaCreacion" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
@@ -83,7 +83,7 @@
             <TextField fx:id="txtCodigoNombre" promptText="Buscar..." GridPane.columnIndex="1" />
             <TextField fx:id="txtPrecioMinimo" GridPane.columnIndex="1" GridPane.rowIndex="2" />
             <TextField fx:id="txtPrecioMaximo" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-            <ComboBox fx:id="cmbCategoria" prefWidth="150.0" GridPane.columnIndex="3" />
+            <ComboBox fx:id="cmbFiltroCategoria" prefWidth="150.0" GridPane.columnIndex="3" />
             <ComboBox fx:id="cmbOrdenarPor" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
             <DatePicker fx:id="dtpFechaHasta" GridPane.columnIndex="3" GridPane.rowIndex="1" />
             <DatePicker fx:id="dtpFechaDesde" GridPane.columnIndex="1" GridPane.rowIndex="1" />
@@ -96,7 +96,7 @@
             <Button fx:id="btnLimpiarFiltros" mnemonicParsing="false" onAction="#limpiarFiltros" text="Limpiar filtros" />
          </children>
       </HBox>
-      <TableView prefHeight="200.0" prefWidth="200.0">
+      <TableView fx:id="tblProductos" prefHeight="200.0" prefWidth="200.0">
         <columns>
           <TableColumn fx:id="colCodigo" prefWidth="112.19999885559082" text="Código" />
           <TableColumn fx:id="colNombre" prefWidth="92.40000915527344" text="Nombre" />
@@ -105,6 +105,7 @@
             <TableColumn fx:id="colPrecio" prefWidth="68.20001220703125" text="Precio" />
             <TableColumn fx:id="colStock" prefWidth="84.39999389648438" text="Stock" />
             <TableColumn fx:id="colFechaCreacion" minWidth="6.20001220703125" prefWidth="117.5999755859375" text="Fecha creación" />
+            <TableColumn fx:id="colDescripcion" prefWidth="75.0" text="Descripción" />
         </columns>
       </TableView>
    </children>
